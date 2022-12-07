@@ -1,0 +1,530 @@
+@media only screen and (min-height: 500px) and (min-width:1200px) {
+    
+    html{
+        display:flex;
+        flex-direction: column;
+        background-color: black;
+        scroll-behavior:smooth;
+        margin:0px;
+        padding:0px;
+        z-index:-3;
+    }
+    /*to make styling in scroll bar*/
+    ::-webkit-scrollbar{
+        width:15px;
+    }
+    ::-webkit-scrollbar-track{
+        background:black;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(white,rgb(86, 86, 86));
+        border-radius: 4px;
+    }
+
+    #home{ /*home page section*/
+        background-image: url("./portfolio-images/anil.jpeg");
+        background-attachment:fixed;
+        background-size:cover;
+        background-position: 280px -50px;
+        z-index: -1;
+        height:100vh;
+        max-width:100%;
+        border-radius:20px; 
+        display: flex;
+        border-top: 0px;
+    }
+
+    /* type writer Animation */
+    .body1{
+        height: 450px;
+        padding: 4em;
+        color: white;
+        font-family: 'Anonymous Pro', monospace;  
+
+    }
+    .line-1{
+        position: absolute;
+        top: 50%;
+        left:300px;  
+        width: 30em;
+        margin: 0 auto;
+        border-right: 2px solid white;
+        font-size: 180%;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);  
+    }
+
+    .anim-typewriter{
+    animation: typewriter 4s steps(40) 1s infinite normal both,
+                blinkTextCursor 500ms steps(40) infinite normal;
+    }
+
+    @keyframes typewriter{
+    from{width: 0;}
+    to{width: 350px;}
+    }
+    @keyframes blinkTextCursor{
+    from{border-right-color: white;}
+    to{border-right-color:transparent;}
+    }
+
+    /* home page lo kinda moving button */
+    .box{
+        display: flex;
+        border:4px solid white;
+        border-radius: 30%;
+        height:25px;
+        width:25px;
+        position:relative;
+        margin-top: auto;
+        margin-bottom: 40px;
+        margin-right: 600px;
+        margin-left: auto;
+        animation-name: movingbutton;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+
+    }
+    .triangle{
+        position: relative;
+        top:20px;
+        left:3px;
+        border-top: 12px solid rgb(95, 210, 255);
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+    @keyframes movingbutton{
+        0%{top:0px;}
+        50%{top:30px;}
+        100%{top:0px;}
+    }
+
+
+    #about{  /*about page section*/
+        /* background-color: black; */
+        background-image: url("./portfolio-images/about-background.jpg");
+        background-attachment: fixed;
+        background-size:auto;
+        background-repeat: no-repeat;
+        background-position:center;
+        z-index: -1;
+        height:100vh;
+        max-width:100vw;
+        display:flex;
+        
+        border-right:-10px;
+        color:white;
+    }
+
+    #services{ /*services page section*/
+        background-image:url("https://wallpaperaccess.com/full/7225503.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        z-index: -1;
+        background-attachment: fixed;
+        background-color: rgba(0, 92, 128, 0);
+        height:100vh;
+        max-width:100vw;
+        display:flex;
+        border-right:-10px;
+        color:white;
+    }
+    #serviceshead{
+        color:skyblue;
+        position: relative;
+        left:560px;
+        top:50px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'ubuntu', serif;
+        
+        border:3px solid white;
+        border-radius: 4px;
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        height:40px;
+        width:fit-content;
+    }
+    #serviceshead2{
+        color:skyblue;
+        position: relative;
+        left:-50px;
+        top:200px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'ubuntu', serif;
+
+        border:4px solid white;
+        border-radius: 4px;
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        height:40px;
+    }
+
+
+    #contact{ /*contact page section*/
+        background-color: black;
+        background-image: url("https://webstarctechnologies.com/wp-content/uploads/2022/06/327-3274460_web-development.jpg");
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        z-index: -1;
+        height:100vh;
+        max-width:100vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-right:-10px;
+        color:white;
+    }
+    #contacthead{
+        color:skyblue;
+        position: relative;
+        top:-180px;
+        left:30px;
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: 'ubuntu', serif;
+        border:3px solid white;
+        border-radius: 4px;
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        height:40px;
+        width:fit-content;
+    }
+    #contactmatter{
+        display: block;
+        text-align: justify;
+        height:200px;
+        max-width:400px;
+        position:relative;
+        left:-240px;
+        top:-10px;
+        font-size:large;
+        font-weight:lighter;
+        font-family: 'Nanum Gothic', sans-serif;
+        letter-spacing: normal;line-height: 30px;
+    }
+    #here{
+        text-decoration:none;
+        color:skyblue;
+    }
+
+    /*navigation bar for home page*/
+    #home .nav a{
+        float:left;
+        
+        color:white;
+        margin-left:40px; /*gap btwn elemets*/
+        margin-top:20px;
+        padding:5px ;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        width:80px; /*total 4 divs width*/
+        text-align: center;  
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(128, 128, 128);
+    }
+    #home #nav{
+        height:75px;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        position: absolute;
+        top:195px;
+        left:150px;
+    }
+
+    #home #nhome{/*only home button in navbar is special in home page(section)*/
+        background-color: rgb(138, 138, 138);
+        color:black; 
+        border-radius: 25px;
+    }
+    
+    #home .homenav:hover{/*effects when nav bar is hovered*/
+            
+            border-radius: 25px;
+            background-color: rgb(138, 138, 138);
+            color:black;
+    }
+    #home .homenav:active{/*effects when nav bar is clicked*/
+            background-color: black;
+            color:  rgb(138, 138, 138);
+    }
+
+    /*navigation bar for about,services,contact sections*/
+    #migatanav{
+        display: flex;
+        flex-direction: column;
+        margin-right:20px;
+        padding:10px;
+        position:absolute;
+        left:20px;
+        top:780px;
+    }
+    #services #migatanav{
+        top:1350px;
+    }
+    #contact #migatanav{
+        top:1920px;
+    }
+    /*text only when hover on logo*/
+    #logolink{
+        display: flex;
+        flex-direction: row;
+        text-decoration:none;
+        
+    }
+    #migatanav .nav{
+        margin-bottom: 30px;
+    }
+
+    .hide {
+        margin-left:10px;
+        display: none;
+    }
+
+    #migatanav .nav #logo:hover + .hide{
+        display: block;
+        border-radius: 25px;
+        border-top: 5px solid rgb(95, 210, 255);
+        border-bottom: 5px solid rgb(95, 210, 255);
+        border-left:2px solid rgb(95, 210, 255);
+        border-right:2px solid rgb(95, 210, 255);
+        height:20px;
+        width:80px;
+        color: white;
+        font-family: 'ubuntu';
+        /* background-color: black; */
+        text-align: center;
+        /* box-shadow: 2px 2px 5px rgb(128, 128, 128); */
+        animation-name: logoname;
+        animation-duration: 1s;
+    }
+    @keyframes logoname {
+        from{transform: translateX(-10px);opacity:0%;}
+        to{transform: translateX(0px);}
+    }
+    #logo img:hover {/*when click the navbar button increase its size*/
+        transform: scale(0.8);
+        transition: all 0.3s ease-in-out; 
+    }
+
+    #migatanav .nav #logo:active {/*when click the navbar button increase its size*/
+        transform:scale(1.1);
+    }
+    #abouthead{
+        position: relative;
+        left:35px;
+        top:50px;
+        font-size: 30px;
+        font-family: 'ubuntu', serif;
+        letter-spacing: 1px;
+        border:4px solid white;
+        border-radius: 7px;
+        height:90px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        box-shadow: 0px 0px 10px black;
+        background-color: transparent;
+    }
+    #abouthead::first-letter{
+        font-size: 250%;
+        mix-blend-mode: screen ;
+    }
+
+
+    /* about me,interests,future plans table*/
+    .mytabs{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin-top:250px;
+        position: relative;
+        top:-70px;
+        left:200px;
+        z-index:0;
+    }
+    .mytabs input[type="radio"]{
+        display:none;
+    }
+    .mytabs #label{
+        margin-right: 40px;
+        font-weight: bolder;
+        font-size: large;
+        
+        height:min-content;
+        letter-spacing: 1px;
+        font-family: 'Nanum Gothic', sans-serif;
+        
+    }
+    .mytabs .tab{
+        order:1;
+        height:fit-content;
+        width:fit-content;
+        display: none;
+        color:white;
+        font-weight:normal;
+        justify-content: center;
+        font-size:medium;
+        word-spacing: 3px;
+        line-height: 25px;
+        font-family: 'Nanum Gothic', sans-serif;
+        position: relative;
+        top:-30px;
+        text-shadow: 20px 20px 20px black;
+    }
+    .mytabs input[type="radio"]:checked+label+.tab{
+        display: block;
+    }
+    .mytabs input[type="radio"]:checked+label{
+        color:skyblue;
+        border:3px solid skyblue;
+        border-radius: 2px;
+        height:2px;
+        border-top:transparent;
+        border-left:transparent;
+        border-right:transparent;
+        padding-bottom: 10px;
+        opacity:100%;
+        transition-duration:300ms;
+    }
+    .mytabs label:hover{
+        opacity:70%;
+        transform: scale(1.1);
+    }
+    #name{/*making Anilkumar Borige bigger size in about me*/
+        font-size: 200%;
+        font-weight:bolder;
+    }
+
+    #servicesmatter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+        height:fit-content;
+        max-width:500px;
+        padding:10px;
+        position: relative;
+        top:150px;
+        left:300px;
+        
+    }
+    .stackiuse{
+        margin-right:20px;
+        border-radius: 3px;
+    }
+    .stackiuse:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+    .project{
+        border:1px solid white;
+        height:100px;
+        min-width:100px;
+        position:relative;
+        top:300px;
+        right:435px;
+        padding:50px;
+        margin-right: 30px;
+    }
+                
+    /* contact form */
+    .wrapper{
+        background: #fff;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        max-width: 480px;
+        max-height: 480px;
+        position: absolute;
+        left:700px;
+        top:1800px;
+        padding-top: 2px;
+        padding-bottom: px;
+        right: 0;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 1.2em;
+        color:black;
+    }
+    .name {
+        background-color: #ebebeb;
+        height: 2em;
+    }
+    .name:hover {
+        border-bottom: 4px solid #0e3721;
+        transition: ease 0.2s;
+    }
+
+    .email {
+        background-color: #ebebeb;
+        height: 2em;
+    }
+
+    .email:hover {
+        border-bottom: 4px solid #0e3721;
+        transition: ease 0.2s;
+    }
+
+    .message {
+        background-color: #ebebeb;
+        overflow: hidden;
+        height: 10rem;
+    }
+
+    .message:hover {
+        border-bottom: 4px solid #0e3721;
+        transition: ease 0.2s;
+    }
+
+    .formEntry {
+        display: block;
+        margin: 30px auto;
+        min-width:300px;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .submit {
+        position: relative;
+        bottom:40px;
+        width: 200px;
+        color: black;
+        background-color: skyblue;
+        font-size: 20px;
+    }
+    .submit:hover{
+        color:white;
+        background-color: black;
+    }
+    /* social media icons */
+    #socialmedia{
+        display: flex;
+        color:white;
+        gap: 20px;
+    }
+    .medialogo{
+        position: relative;
+        right:560px;
+        top:100px;
+    }
+    .medialogo{
+        filter: white; 
+        filter: grayscale(1); 
+    }
+    .medialogo:hover {
+        filter: grayscale(0);
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>anil</title>
+        <link rel = "icon" href ="./portfolio-images/portfolio.jpeg" type = "image/x-icon">
+
+        <!-- google fonts  -->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <!-- when scroll animations github library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- javascript -->
+        <script src="portfolio.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        
+        
+    
+    </head>
+    <body>
+        <!-- home page -->
+        <section id="home" data-aos="fade-in">
+            <!-- home nav bar -->
+            <div id="nav"> 
+                <div class="nav"><a id="nhome" class="homenav" href="#home">home</a></div>
+                <div class="nav"><a class="homenav" href="#about">about</a></div>
+                <div class="nav"><a class="homenav" href="#services">services</a></div>
+                <div class="nav"><a class="homenav" href="#contact">contact</a></div> 
+            </div>
+            <!-- home page type writer -->
+            <span class="body1"><p class="line-1 anim-typewriter">Hello ! I am Anil..</p></span>
+            <!-- home page lo kinda moving button -->
+            <div class="box">
+                <a href="#about"><span class="triangle"></span></a>
+            </div>
+        </section>
+        <!-- about page -->
+        <section id="about" data-aos="fade-in">
+            <!-- about page heading -->
+            <div id="abouthead" data-aos="fade-right">About</div>
+            <!-- navigation bar (left side) -->
+            <div id="migatanav">
+                <div class="nav">
+                    <a id="logolink" href="#home">
+                        <div id="logo"><img id="homepic" src="./portfolio-images/home.png" height="30px" width="30px"></div>
+                        <div class="hide" text-align:right>home</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#about">
+                        <div id="logo"><img src="./portfolio-images/user.png" height="30px" width="30px"></div>
+                        <div class="hide" id="nabout">about</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#services">
+                        <div id="logo"><img src="./portfolio-images/document.png" height="30px" width="30px"></div>
+                        <div class="hide">services</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#contact">
+                        <div id="logo"><img src="./portfolio-images/at.png" height="30px" width="30px"></div>
+                        <div class="hide">contact</div>
+                    </a>
+                </div> 
+            </div>
+            <!-- about page matter -->
+            <div class="mytabs" data-aos="fade-left">
+                <input type="radio" id="tab1" name="mytabs" checked="checked">
+                <label for="tab1" id="label">About me</label>
+                <div class="tab">
+                    <p>I am <span id="name">Anilkumar Borige</span> a computer science undergraduate from Hyderabad, Telangana, India. A  Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.
+                        I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. </p>
+                </div>
+                <input type="radio" id="tab2" name="mytabs" >
+                <label for="tab2" id="label">Interests</label>
+                <div class="tab">
+                    <p font-size="100px">- interested in coding related stuff <br> - open to new ideas <br> - swimming <br> - sleeping</p>
+                </div>
+                <input type="radio" id="tab3" name="mytabs" >
+                <label for="tab3" id="label">Future plans</label>
+                <div class="tab">
+                    <p>- back-end development <br> - android development <br> - data-science <br> - machine learning <br> - I am open to opportunities for the same.</p>
+                </div>
+            </div>
+        </section>
+        <!-- services page -->
+        <section id="services" data-aos="fade-in">
+            <!-- services page heading -->
+            <h1 id="serviceshead" data-aos="fade-left">Stack</h1>
+            <!-- navigation bar -->
+            <div id="migatanav">
+                <div class="nav">
+                    <a id="logolink" href="#home">
+                        <div id="logo"><img id="homepic" src="./portfolio-images/home.png" height="30px" width="30px"></div>
+                        <div class="hide" text-align:right>home</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#about">
+                        <div id="logo"><img src="./portfolio-images/user.png" height="30px" width="30px"></div>
+                        <div class="hide">about</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#services">
+                        <div id="logo"><img src="./portfolio-images/document.png" height="30px" width="30px"></div>
+                        <div class="hide" id="nservices">services</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#contact">
+                        <div id="logo"><img src="./portfolio-images/at.png" height="30px" width="30px"></div>
+                        <div class="hide">contact</div>
+                    </a>
+                </div> 
+            </div>
+            <div id="servicesmatter" data-aos="fade-in">
+                <div class="stackiuse">
+                    <img id="c" src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
+                </div>
+                <div class="stackiuse">
+                    <img id="c++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                </div>
+                <div class="stackiuse">
+                    <img id="python" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white">
+                </div>
+                <div class="stackiuse">
+                    <img id="html" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" >
+                </div>
+                <div class="stackiuse">
+                    <img id="css" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" >
+                </div>
+                <div class="stackiuse">
+                    <img id="js" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+                </div>
+                <div class="stackiuse">
+                    <img id="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+                </div>
+                <div class="stackiuse">
+                    <img id="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                </div>
+                <div class="stackiuse">
+                    <img id="r" src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white">
+                </div>
+            </div>
+            <h1 id="serviceshead2" data-aos="fade-left">Projects</h1>
+            <div class="project" data-aos="fade-left"></div>
+            <div class="project" data-aos="fade-in"></div>
+            <div class="project" data-aos="fade-right"></div>
+
+        </section>
+        <section id="contact" data-aos="fade-in">
+            <div id="contacthead">Contact Me</div>
+            <div id="contactmatter">If you have any questions, suggestions or you simply want to chat, please fill out the contact form or reach me out using any preferable means of communication listed below. Also, you can view my resume <a id="here" href="./portfolio-images/Resume CV.pdf" target="_blank">here.</a></div>
+            <div id="migatanav">
+                <div class="nav">
+                    <a id="logolink" href="#home">
+                        <div id="logo"><img id="homepic" src="./portfolio-images/home.png" height="30px" width="30px"></div>
+                        <div class="hide" text-align:right>home</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#about">
+                        <div id="logo"><img src="./portfolio-images/user.png" height="30px" width="30px"></div>
+                        <div class="hide">about</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#services">
+                        <div id="logo"><img src="./portfolio-images/document.png" height="30px" width="30px"></div>
+                        <div class="hide">services</div>
+                    </a>
+                </div>
+                <div class="nav">
+                    <a id="logolink" href="#contact">
+                        <div id="logo"><img src="./portfolio-images/at.png" height="30px" width="30px"></div>
+                        <div class="hide" id="ncontact">contact</div>
+                    </a>
+                </div> 
+            </div>
+            <div class="wrapper" >
+                <form id="contactform" onsubmit="thanks()">
+                  <textarea type="text" class="email formEntry" placeholder="Name" id="namee"></textarea>
+                  <textarea type="text" class="email formEntry" placeholder="Email" id="mail"></textarea>
+                  <textarea class="message formEntry" placeholder="Message" id="msg"></textarea>
+                  <br>
+                  <button class="submit formEntry">Submit</button>
+                </form>
+            </div>
+            <div id="socialmedia">
+                <a href="https://github.com/Anil951" target="_blank"><img class="medialogo" src="./portfolio-images/github.png" height="30px" width="30px" onclick="redirectverify()"></a>
+                <a href="https://www.instagram.com/thisis__anil/" target="_blank"><img class="medialogo"  src="./portfolio-images/insta.png" height="30px" width="30px" onclick="redirectverify()"></a>
+                <a href="https://www.linkedin.com/in/anilkumar-borige-b6576a234/" target="_blank"><img class="medialogo" id="linkedinlogo" src="./portfolio-images/linkedin.png" height="30px" width="30px" onclick="redirectverify()"></a>
+                <a href="mailto:anilkumarborige2@gmail.com" target="_blank"><img class="medialogo"  src="./portfolio-images/gmail.png" height="30px" width="30px" onclick="redirectverify()"></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><img class="medialogo"  src="./portfolio-images/twitter.png" height="30px" width="30px" onclick="redirectverify()"></a>
+            </div>
+        </section>
+        
+        <!-- when scroll --animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init(
+            {duration:2000}
+          );
+        </script>
+
+    </body>
+</html>
